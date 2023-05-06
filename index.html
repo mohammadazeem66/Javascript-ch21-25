@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Ch21-25 </title>
+</head>
+<body>
+    
+
+    <Script>
+
+ 
+ 
+    //   1. Write a program that takes two user inputs for first and last name using prompt and merge them in a new variable titled fullName. Greet the user using his full name.
+       
+
+    document.write("<br> <h1> Question No: 1 </h1> <br>");
+    var firstName = prompt("enter your first name");
+    var lastName = prompt(" enter your last name ");
+
+    var fullName = firstName + " " + lastName;
+
+    document.write(" Full name is " + fullName);
+
+
+   // 2. Write a program to take a user input about his favorite mobile phone model. Find and display the length of user input in your browser   
+
+   document.write("<br> <h1> Question No: 2 </h1> <br>");
+   var mobileModel = prompt(" enter your favourite mobile model name :");
+   document.write("Favorite Phone Model is " + mobileModel);
+   document.write("<br> String Length is " + mobileModel.length);
+
+
+   //3. Write a program to find the index of letter “n” in the word “Pakistani” and display the result in your browser .    
+
+   document.write("<br> <h1> Question No: 3 </h1> <br>");
+   var name = "pakistani"
+   var stringindex = name.indexOf("n");
+   document.write("String :" + name)
+   document.write("<br> index of n is "+ stringindex);
+
+  // 4. Write a program to find the last index of letter “l” in the word “Hello World” and display the result in your browser.
+  
+  document.write("<br> <h1> Question No: 4 </h1> <br>");
+  var message = "Hello World"
+  var newmsg = message.lastIndexOf("l");
+  document.write(" String :" + message)
+  document.write("<br> Last index of l is " + newmsg)
+
+  
+  //5. Write a program to find the character at 3rd index in the word “Pakistani” and display the result in your browser.   
+
+  document.write("<br> <h1> Question No: 5 </h1> <br>");
+   var country = "Pakistani"
+   var update = country.charAt(3);
+   document.write(" String :" + country)
+   document.write("<br> character at 3rd index is " + update)
+
+
+    // 6. Repeat Q1 using string concat() method.
+
+    document.write("<br> <h1> Question No: 6 </h1> <br>");
+    var firstName = prompt("enter first name")
+    var lastName = prompt("enter last name")
+    var updt = firstName.concat(lastName)
+    document.write(updt);
+ 
+
+    // 7. Write a program to replace the “Hyder” to “Islam” in the word “Hyderabad” and display the result in your browser.
+
+    document.write("<br> <h1> Question No: 7 </h1> <br>");
+    var city = "Hyderabad"
+    var afterreplace = city.replace("Hyder" , "Islam")
+    document.write("City Name is: " + afterreplace)
+    document.write("<br> Afterreplacement : " + afterreplace)
+
+
+    // 8. Write a program to replace all occurrences of “and” in the string with “&” and display the result in your browser.
+
+    document.write("<br> <h1> Question No: 8 </h1> <br>");
+    var msg = "Ali and Sami are best friends They play cricket and football together"
+    var replace = msg.replace(/ and/gi ," &")
+    document.write(replace)
+
+
+    // 9. Write a program that converts a string “472” to a number 472. Display the values & types in your browser.
+  
+    document.write("<br> <h1> Question No: 9 </h1> <br>");
+    var n = "472";
+    var n1 = +n;
+    document.write("String :" + n1);
+    document.write("<br> Type :" + typeof(n1));
+
+    //10. Write a program that takes user input. Convert and show the input in capital letters.   
+
+    document.write("<br> <h1> Question No: 10 </h1> <br>");
+    var dryFruit = prompt("enter any dry fruit name");
+    var afterupercase= dryFruit.toUpperCase()
+    document.write("Input :" + dryFruit)
+    document.write("<br> Uppercase :" + afterupercase)
+
+    // 11. Write a program that takes user input. Convert and show the input in title case.
+
+    document.write("<br> <h1> Question No: 11 </h1> <br>");
+    var name = prompt("enter any string :")
+    var arr = name.split();
+
+   for(var i = 0 ; i < arr.length ; i++){
+   arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1).toLowerCase();
+
+   }
+   document.write(arr);
+
+    // 12. Write a program that converts the variable num to string.
+    //  var num = 35.36 ;
+    //  Remove the dot to display “3536” display in your browser.
+
+    document.write("<br> <h1> Question No: 12 </h1> <br>");
+    var num1 = 35.36;
+          
+    var num2 = parseFloat(num);
+    document.write("Number :" + num1)
+    document.write("Result :" + num2)
+
+
+    // 13. Write a program to take user input and store username in a variable. If the username contains any special symbol among [@ . , !], prompt the user to enter a valid username. For character codes of [@ .
+
+    //  Note:
+    //  ASCII code of ! is 33
+    //  ASCII code of , is 44
+    //  ASCII code of . is 46
+    //  ASCII code of @ is 64
+
+    // document.write("<br> <h1> Question No: 12 </h1> <br>");
+     
+
+
+
+
+    </Script>
+</body>
+</html>
